@@ -1,6 +1,6 @@
 console.log("Fetch header loaded")
 document.addEventListener("DOMContentLoaded", function() {
-    fetch("header.html")
+    fetch("../js/header.html")
         .then(response => {
             return response.text();
         })
