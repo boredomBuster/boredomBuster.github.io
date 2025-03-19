@@ -1,0 +1,31 @@
+.box-container {
+    width: 80vw; /* Box width */
+    height: 80vh; /* Box height */
+    margin: 20px auto; /* Center the box horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #3498db; /* Border around the box */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    background-color: #f4f4f4; /* Light background color */
+    overflow: hidden; /* Hide anything overflowing */
+}
+
+/* Grid container for .el elements */
+.staggering-grid-demo {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr); /* 20 elements per row */
+    padding: 15px;
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+}
+
+/* Styling for the elements inside the grid */
+.el {
+    width: 0.75fr;  /* Smaller width */
+    height: 0.75fr;  /* Smaller height */
+    background-color: #3498db;
+    border-radius: 5px;
+    transition: all 0.1s ease-out;
+}
