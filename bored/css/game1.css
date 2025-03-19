@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure it takes full height of the viewport */
+    margin: 0; /* Remove default body margin */
+    background-color: #f0f0f0; /* Optional: Set a background color */
+}
+.lockscreen {
+    justify-content: center;
+    width: 300px;
+    text-align: center;
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 20px;
+    background: gray;
+}
+.screen {
+    height: 100px;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+button {
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: white;
+}
+/* get header in correct position */
+#header-placeholder {
+    width: 100%; /* Ensure the header stretches across the page */
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 10px;
+    background-color: #f1f1f1;
+    color: white; /* Example text color */
+    text-align: center;
+    z-index: 10; /* Ensure it's above other content */
+}
+
+#timer{
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}

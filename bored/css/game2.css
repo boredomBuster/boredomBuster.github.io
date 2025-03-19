@@ -1,0 +1,57 @@
+.layout {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    gap: 20px; /* Adds spacing between buttons */
+    justify-content: center; /* Centers buttons horizontally */
+    padding: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+#earthBtn { background-color: green; color: white; }
+#airBtn { background-color: lightblue; color: black; }
+#fireBtn { background-color: red; color: white; }
+#waterBtn { background-color: blue; color: white; }
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Styling specific effects */
+#earthEffect {
+    background-color: #228B22; /* Forest green for tree */
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.1);
+    border-radius: 50%;
+}
+
+#waterEffect {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.bubble {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 191, 255, 0.8);
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+#fireEffect {
+    visibility: hidden;
+    opacity: 0;
+}
+
+#airEffect {
+    visibility: hidden;
+    opacity: 0;
+}
